@@ -17,7 +17,7 @@
                         (let [new-y (Math/ceil (+ (current-y)
                                                   (* (- target-y (current-y))
                                                      (- 0.5 (* 0.5 (Math/cos (* @counter step)))))))]
-                          (.scrollTo scroll-target 0 new-y))
+                          (aset scroll-target "scrollTop" new-y))
                         (.setTimeout js/window do-step 10)))]
         (do-step)))))
 

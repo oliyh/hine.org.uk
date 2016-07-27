@@ -41,7 +41,7 @@ body {
 
         .mdl-card__title {
             background-position-x: right 15%;
-            background-position-y: bottom;
+            background-position-y: top;
             background-size: 100%;
             background-repeat: no-repeat;
             transition: background-size 0.1s ease-in-out;
@@ -61,7 +61,8 @@ body {
 
 #oliy-card {
     .mdl-card__title {
-        background-image: url('/img/oliy-card.jpg');
+        background-image: url('../img/oliy-card.jpg');
+
     }
 
     &:hover .mdl-card__title {
@@ -87,7 +88,7 @@ body {
     z-index: 5;
 
     .parallax-layer-base {
-        background-image: url('/img/background.jpg');
+        background-image: url('../img/background.jpg');
         background-size: cover;
     }
 }
@@ -96,7 +97,7 @@ body {
     z-index: 4;
 
     .parallax-layer-base {
-        background-image: url('/img/oliy-section.jpg');
+        background-image: url('../img/oliy-section.jpg');
         background-size: cover;
     }
 }
