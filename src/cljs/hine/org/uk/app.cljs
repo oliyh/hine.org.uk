@@ -3,8 +3,6 @@
             [re-frame.core :as re-frame]
             [goog.fx.dom.Scroll]))
 
-(def println js/console.log)
-
 (defn scroll-to! [id duration]
   (let [scroll-target (.getElementById js/document "parallax-container")
         target-y (int (.-scrollHeight (.getElementById js/document id)))
